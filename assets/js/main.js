@@ -19,7 +19,7 @@ function login(el){
         success = true;
     }
     if(success){
-        window.location.replace(urlStart + "index.html?token=CGMqyCmXpC");
+        window.location.replace(urlStart + "/index.html?token=CGMqyCmXpC");
     }else{
         $('#wrong_login').show();
     }
