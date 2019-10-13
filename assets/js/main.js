@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded",function(){new SweetScroll({});part
 
 $( document ).ready(function() {
     if(window.location.href.indexOf('login.html') == -1 && getAllUrlParams().token != 'CGMqyCmXpC'.toLowerCase()){
-        window.location.replace("/login.html");
+        window.location.replace("/fake_profile_detection/login.html");
     }
 });
 
@@ -18,7 +18,7 @@ function login(el){
         success = true;
     }
     if(success){
-        window.location.replace("/index.html?token=CGMqyCmXpC");
+        window.location.replace("/fake_profile_detection/index.html?token=CGMqyCmXpC");
     }else{
         $('#wrong_login').show();
     }
